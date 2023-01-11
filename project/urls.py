@@ -6,6 +6,6 @@ from .apis import (
 )
 
 router = DefaultRouter()
-router.register(r'project', ViewSetProject, basename='project')
+router.register(r'', ViewSetProject, basename='project')
 router.register(r'timeline', ViewSetTimeLine, basename='timeline')
 urlpatterns = router.urls

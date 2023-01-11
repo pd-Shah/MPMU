@@ -1,8 +1,8 @@
 from rest_framework.permissions import BasePermission
 
-class CanCreate(BasePermission):
+class IsOwner(BasePermission):
 
     def has_permission(self, request, view):
         # DO some calculation
-        # if request.user could do CUD
+        # if request.user is the owner 
         return True

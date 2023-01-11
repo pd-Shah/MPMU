@@ -6,4 +6,4 @@ from ..models import TimeLine
 class TimeLineSerializer(serializers.ModelSerializer):
     class Meta:
         model = TimeLine
-        fields = ["id", "title", ]
+        fields = ["id", "title", "user", "project"]
